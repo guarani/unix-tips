@@ -1,0 +1,8 @@
+# Find files recursively
+find . -name "*.png"
+
+# Find files recursively (ignore a particular directory)
+find . -path ./ItauPF-iOS/www -prune -o -name "*.png"
+
+# Grep for a string in all files recursively
+grep -ri "*Itau-PF*" .
